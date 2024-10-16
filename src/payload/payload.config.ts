@@ -23,6 +23,7 @@ import { seed } from './endpoints/seed'
 import { Footer } from './globals/Footer'
 import { Header } from './globals/Header'
 import { Settings } from './globals/Settings'
+import { postgresAdapter } from '@payloadcms/db-postgres'
 
 const generateTitle: GenerateTitle = () => {
   return 'My Website'
@@ -61,8 +62,14 @@ export default buildConfig({
   },
   editor: slateEditor({}), // editor-config
   // database-adapter-config-start
-  db: mongooseAdapter({
-    url: process.env.DATABASE_URI,
+  // db: mongooseAdapter({
+  //   url: process.env.DATABASE_URI,
+  // }),
+  db: postgresAdapter({
+    pool: {
+      connectionString: process.env.DATABASE_URI || '',
+      ssl: { rejectUnauthorized: false}
+    },
   }),
   // database-adapter-config-end
   serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,

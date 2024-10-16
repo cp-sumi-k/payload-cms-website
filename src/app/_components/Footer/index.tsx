@@ -25,7 +25,7 @@ export async function Footer() {
 
   return (
     <footer className={classes.footer}>
-      <Gutter className={classes.wrap}>
+      {/* <Gutter className={classes.wrap}>
         <Link href="/">
           <picture>
             <img
@@ -52,7 +52,7 @@ export async function Footer() {
             Payload
           </Link>
         </nav>
-      </Gutter>
+      </Gutter> */}
     </footer>
   )
 }
