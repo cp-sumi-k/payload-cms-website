@@ -2029,6 +2029,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@netlify/plugin-nextjs@npm:latest":
+  version: 5.8.1
+  resolution: "@netlify/plugin-nextjs@npm:5.8.1"
+  checksum: b977be3c61785ad2157ffcb7ee178cf39bd753de1832e7067db20a29096231a7cbf46eed78f5ada26a56ba1e6c225c002df10b75cb530935a8d90add4759c47d
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:13.5.2":
   version: 13.5.2
   resolution: "@next/env@npm:13.5.2"
@@ -2313,6 +2320,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@payloadcms/template-website@workspace:."
   dependencies:
+    "@netlify/plugin-nextjs": latest
     "@next/eslint-plugin-next": ^13.1.6
     "@payloadcms/bundler-webpack": ^1.0.0
     "@payloadcms/db-mongodb": ^1.0.0
