@@ -1,1 +1,4 @@
 **/payload-types.ts
+.next
+.vscode
+*.json

@@ -23,7 +23,6 @@ import { seed } from './endpoints/seed'
 import { Footer } from './globals/Footer'
 import { Header } from './globals/Header'
 import { Settings } from './globals/Settings'
-import { postgresAdapter } from '@payloadcms/db-postgres'
 
 const generateTitle: GenerateTitle = () => {
   return 'My Website'
